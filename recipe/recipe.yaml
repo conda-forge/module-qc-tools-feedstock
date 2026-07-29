@@ -2,8 +2,8 @@ schema_version: 1
 
 context:
   name: module-qc-tools
-  version: "2.8.0"
-  python_min: '3.10'
+  version: "2.9.2"
+  python_min: '3.11'
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/module_qc_tools-${{ version }}.tar.gz
-  sha256: a6131efede950e9c1789d03f7a039690b1ff7fd63121b3153b00acd7fc3a1e0f
+  sha256: 189431ab5c2d948631eca2c938bcd2839bc4a67c9997c9a17bd74124ef2fe3b5
 
 build:
   number: 0
@@ -34,8 +34,8 @@ requirements:
     - tabulate
     - pre-commit
     - check-jsonschema
-    - module-qc-data-tools >=1.4.0
-    - module-qc-database-tools >=2.9.0
+    - module-qc-data-tools >=1.7.0
+    - module-qc-database-tools >=2.11.2
     - requests
     - typer >=0.18.0
     - rich

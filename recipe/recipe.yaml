@@ -33,7 +33,7 @@ requirements:
     - tabulate
     - pre-commit
     - check-jsonschema
-    - module-qc-data-tools >=1.7.0
+    - module-qc-data-tools >=1.7.2
     - module-qc-database-tools >=2.11.2
     - requests
     - typer >=0.18.0
